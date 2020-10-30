@@ -92,6 +92,10 @@ $item-container-row-height-compact-mode: 4rem !default;
 		transition: .15s easing(easeOutQuart);
 	}
 
+	&.item-is-focused::before {
+		border-left: 4px solid $pm-primary-light;
+	}
+
 	&:hover::before {
 		border-color: $pm-primary-light;
 		box-shadow: 0 .125em .25em 0 var(--dropdown-box-shadow, $input-shadow-color);
@@ -647,6 +651,11 @@ $conversation-icon-size: 3.2rem !default;
 		border-bottom: 1px solid var(--bordercolor-input, $pm-global-border);
 	}
 
+}
+
+.message-container.is-focused {
+	border-color: $pm-primary-light;
+	box-shadow: 0 .125em .25em 0 var(--dropdown-box-shadow, $input-shadow-color);
 }
 
 .message-container--hasAttachment {
