@@ -92,6 +92,11 @@ $item-container-row-height-compact-mode: 4rem !default;
 		transition: .15s easing(easeOutQuart);
 	}
 
+	&:focus{
+		outline: none;
+	}
+
+	&:focus::before,
 	&.item-is-focused::before {
 		border-left: 4px solid $pm-primary-light;
 	}

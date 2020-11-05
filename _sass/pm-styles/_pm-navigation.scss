@@ -34,6 +34,7 @@ $padding-left-link: 2rem !default;
   background: $navigation-hover-bg-color;
   color: var(--color-nav-link, $pm-global-light);
   text-decoration: none;
+  outline: none;
 }
 [aria-current="page"].navigation__link {
   background: $navigation-hover-bg-color;
