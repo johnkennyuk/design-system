@@ -101,6 +101,7 @@ body {
   color: var(--color-main-area, $pm-global-grey);
   overflow: auto;
   border-top-left-radius: 4px;
+  outline: none;
 
   &.no-scroll {
     overflow: hidden;
